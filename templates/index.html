@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="container">
+        <h1>{{ title }}</h1>
+        <p>Yeh app GitHub Actions CI/CD pipeline ke saath deploy hoti hai.</p>
+        <ul>
+            <li><code>GET /api/health</code> &mdash; health check</li>
+            <li><code>GET /api/greet/&lt;name&gt;</code> &mdash; greeting example</li>
+            <li><code>POST /api/echo</code> &mdash; echoes JSON body</li>
+        </ul>
+    </main>
+</body>
+</html>
